@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh sách tour</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <h1>TRAVEL WEBSITE</h1>
+    </header>
+
+    <nav class="menu">
+        <a href="index.html">Trang chủ</a>
+        <a href="tour.html">Tour</a>
+        <a href="booking.html">Đặt tour</a>
+    </nav>
+
+    <section class="section">
+        <h2 class="section-title">Danh sách tour</h2>
+
+        <div class="card-container">
+            <div class="tour-card">
+                <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" alt="Tour Đà Lạt">
+                <h3>Tour Đà Lạt</h3>
+                <p>Tour Đà Lạt 3 ngày 2 đêm, phù hợp cho du khách yêu thích khí hậu mát mẻ.</p>
+                <p class="price">Giá: 3.500.000 VNĐ</p>
+                <button class="btn" onclick="chooseTour('Đà Lạt')">Chọn tour</button>
+            </div>
+
+            <div class="tour-card">
+                <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=80" alt="Tour Phú Quốc">
+                <h3>Tour Phú Quốc</h3>
+                <p>Tour nghỉ dưỡng biển đảo, phù hợp cho gia đình và nhóm bạn.</p>
+                <p class="price">Giá: 4.200.000 VNĐ</p>
+                <button class="btn" onclick="chooseTour('Phú Quốc')">Chọn tour</button>
+            </div>
+
+            <div class="tour-card">
+                <img src="https://images.unsplash.com/photo-1583417319070-4a69db38a482?auto=format&fit=crop&w=600&q=80" alt="Tour Hà Nội">
+                <h3>Tour Hà Nội</h3>
+                <p>City tour tham quan phố cổ, Hồ Gươm và các di tích lịch sử.</p>
+                <p class="price">Giá: 2.800.000 VNĐ</p>
+                <button class="btn" onclick="chooseTour('Hà Nội')">Chọn tour</button>
+            </div>
+
+            <div class="tour-card">
+                <img src="https://images.unsplash.com/photo-1559592413-7cec4d0cae2b?auto=format&fit=crop&w=600&q=80" alt="Tour Hội An">
+                <h3>Tour Hội An</h3>
+                <p>Khám phá phố cổ Hội An, đèn lồng và văn hóa miền Trung.</p>
+                <p class="price">Giá: 3.000.000 VNĐ</p>
+                <button class="btn" onclick="chooseTour('Hội An')">Chọn tour</button>
+            </div>
+        </div>
+
+        <p id="tourMessage" class="message"></p>
+    </section>
+
+    <footer class="footer">
+        <p>© 2026 TRAVEL WEBSITE</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

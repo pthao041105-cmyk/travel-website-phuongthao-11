@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đặt tour</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <h1>TRAVEL WEBSITE</h1>
+    </header>
+
+    <nav class="menu">
+        <a href="index.html">Trang chủ</a>
+        <a href="tour.html">Tour</a>
+        <a href="booking.html">Đặt tour</a>
+    </nav>
+
+    <section class="section">
+        <h2 class="section-title">Form đặt tour</h2>
+
+        <form class="booking-form" onsubmit="checkBookingForm(event)">
+            <label>Họ tên</label>
+            <input type="text" id="fullname" placeholder="Nhập họ tên">
+
+            <label>Số điện thoại</label>
+            <input type="text" id="phone" placeholder="Nhập số điện thoại">
+
+            <label>Email</label>
+            <input type="email" id="email" placeholder="Nhập email">
+
+            <label>Chọn điểm đến</label>
+            <select id="destination">
+                <option value="">-- Chọn điểm đến --</option>
+                <option value="Đà Lạt">Đà Lạt</option>
+                <option value="Phú Quốc">Phú Quốc</option>
+                <option value="Hà Nội">Hà Nội</option>
+                <option value="Hội An">Hội An</option>
+            </select>
+
+            <label>Ngày đi</label>
+            <input type="date" id="date">
+
+            <label>Số người</label>
+            <input type="number" id="people" placeholder="Nhập số người">
+
+            <label>Ghi chú</label>
+            <textarea id="note" rows="4" placeholder="Nhập ghi chú nếu có"></textarea>
+
+            <button type="submit" class="btn">Đặt tour</button>
+        </form>
+
+        <p id="bookingMessage" class="message"></p>
+    </section>
+
+    <footer class="footer">
+        <p>© 2026 TRAVEL WEBSITE</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
